@@ -8,8 +8,8 @@ export const hello: APIGatewayProxyHandler = async (event, _context) => {
     body: JSON.stringify(
       {
         message:
-          "Go Serverless Webpack (Typescript) v1.0! Your function executed successfully!",
-        input: event,
+          "This code deployed directly from the CI/CD pipeline using GitHub Action and Serverless!",
+        httpMethod: event.httpMethod,
       },
       null,
       2
